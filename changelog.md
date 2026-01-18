@@ -2,6 +2,11 @@
 
 ## izneo_get.py
 
+### Version 1.3.0 (2026-01-18)
+
+- [NEW] Ajout de la compatibilité avec le site `mangas.io`.
+- [CHORES] Mise à jour des dépendances.
+
 ### Version 1.2.3 (2025-11-29)
 
 - [FIX] Gestion du répertoire de cache.

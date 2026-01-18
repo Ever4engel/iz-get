@@ -8,6 +8,7 @@ Sites compatibles :
 
 - <https://archive.org/>
 - <https://www.izneo.com/fr/>
+- <https://www.mangas.io/>
 - <https://www.webtoons.com>
 
 ## Utilisation en mode interactif

@@ -100,6 +100,9 @@ class SiteProcessor:
 
     def after_download(self, files_downloaded: List[str]) -> None: ...
 
+    async def before_download_page(self, page_num: int, url: str) -> str:
+        return url
+
     def post_process_image_content(
         self, response: requests.models.Response, page_num: int = 0
     ) -> bytes:
@@ -135,6 +138,10 @@ class SiteProcessor:
             and os.path.getsize(store_path_converted)
         ):
             return store_path_converted
+
+        url = await self.before_download_page(page_num, url)
+        if not url:
+            return ""
 
         # r = s.get(url, cookies=s.cookies, allow_redirects=True, params=params, headers=headers)
         try:

@@ -208,7 +208,7 @@ class MangasIo(SiteProcessor):
                  return ""
             
             pages_map = book_infos.custom_fields["pages_map"]
-            page_id = pages_map.get(page_num + 1)
+            page_id = pages_map.get(page_num)
             if not page_id:
                  return ""
 
